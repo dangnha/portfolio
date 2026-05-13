@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academic Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <a href="#" class="nav__brand">Dr. Jane Doe</a>
+      <button class="nav__toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav__links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#teaching">Teaching</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Dr. Jane Doe</h1>
+        <p class="hero__subtitle">Associate Professor of Computer Science, University of Example</p>
+        <p class="hero__interests">Machine Learning &bull; Natural Language Processing &bull; Computer Vision</p>
+        <div class="hero__social">
+          <a href="https://linkedin.com" target="_blank" rel="noopener" class="hero__social-link" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://github.com" target="_blank" rel="noopener" class="hero__social-link" aria-label="GitHub">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            <span>GitHub</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section__title">About</h2>
+        <div class="about__grid">
+          <div class="about__image">
+            <div class="about__placeholder"></div>
+          </div>
+          <div class="about__text">
+            <p>
+              I am an Associate Professor in the Department of Computer Science at University of Example.
+              My research lies at the intersection of machine learning and natural language processing, with
+              a particular focus on developing interpretable models for complex reasoning tasks.
+            </p>
+            <p>
+              Prior to joining University of Example, I completed my Ph.D. at Stanford University (2016)
+              and was a postdoctoral researcher at MIT CSAIL. My work has been recognized with
+              an NSF CAREER Award, a Google Faculty Research Award, and best paper awards at NeurIPS and ACL.
+            </p>
+            <div class="about__links">
+              <a href="#" class="btn btn--primary">Download CV</a>
+              <a href="https://scholar.google.com" class="btn btn--outline" target="_blank" rel="noopener">Google Scholar</a>
+              <a href="https://linkedin.com" class="btn btn--outline" target="_blank" rel="noopener">LinkedIn</a>
+              <a href="https://github.com" class="btn btn--outline" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="research" class="section section--alt">
+      <div class="container">
+        <h2 class="section__title">Research</h2>
+        <div class="research__grid">
+          <div class="card">
+            <h3>Interpretable Machine Learning</h3>
+            <p>
+              Developing methods to explain and interpret black-box models, with applications in
+              healthcare and legal decision-making systems.
+            </p>
+            <ul class="card__tags">
+              <li>LIME</li>
+              <li>SHAP</li>
+              <li>Model Distillation</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Large Language Models</h3>
+            <p>
+              Investigating the reasoning capabilities and limitations of LLMs, including
+              chain-of-thought prompting and multi-step problem solving.
+            </p>
+            <ul class="card__tags">
+              <li>GPT</li>
+              <li>Reasoning</li>
+              <li>Prompt Engineering</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Computer Vision</h3>
+            <p>
+              Advancing visual understanding through self-supervised learning and
+              multimodal representations for image-text tasks.
+            </p>
+            <ul class="card__tags">
+              <li>Vision Transformers</li>
+              <li>CLIP</li>
+              <li>Contrastive Learning</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications" class="section">
+      <div class="container">
+        <h2 class="section__title">Selected Publications</h2>
+        <div class="pubs__list">
+          <div class="pub">
+            <h3 class="pub__title">
+              Interpretable Neural Networks via Concept Activation Vectors
+            </h3>
+            <p class="pub__authors">Doe, J., Smith, A., &amp; Johnson, R.</p>
+            <p class="pub__venue">NeurIPS, 2023 &mdash; <span class="pub__award">Best Paper Award</span></p>
+            <div class="pub__links">
+              <a href="#" class="pub__link">Paper</a>
+              <a href="#" class="pub__link">Code</a>
+              <a href="#" class="pub__link">Slides</a>
+            </div>
+          </div>
+          <div class="pub">
+            <h3 class="pub__title">
+              Chain-of-Thought Reasoning in Multimodal Language Models
+            </h3>
+            <p class="pub__authors">Doe, J., &amp; Chen, L.</p>
+            <p class="pub__venue">ICLR, 2022</p>
+            <div class="pub__links">
+              <a href="#" class="pub__link">Paper</a>
+              <a href="#" class="pub__link">Code</a>
+            </div>
+          </div>
+          <div class="pub">
+            <h3 class="pub__title">
+              Self-Supervised Learning for Robust Visual Representations
+            </h3>
+            <p class="pub__authors">Doe, J., Kumar, P., &amp; Zhang, Y.</p>
+            <p class="pub__venue">CVPR, 2021</p>
+            <div class="pub__links">
+              <a href="#" class="pub__link">Paper</a>
+              <a href="#" class="pub__link">Code</a>
+              <a href="#" class="pub__link">Poster</a>
+            </div>
+          </div>
+          <div class="pub">
+            <h3 class="pub__title">
+              Towards Faithful Explanations for Deep Neural Networks
+            </h3>
+            <p class="pub__authors">Doe, J.</p>
+            <p class="pub__venue">ACL, 2020 &mdash; <span class="pub__award">Best Paper Award</span></p>
+            <div class="pub__links">
+              <a href="#" class="pub__link">Paper</a>
+              <a href="#" class="pub__link">Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="teaching" class="section section--alt">
+      <div class="container">
+        <h2 class="section__title">Teaching</h2>
+        <div class="teaching__grid">
+          <div class="card card--compact">
+            <h3>CS 229: Machine Learning</h3>
+            <p class="card__meta">Fall 2023, Spring 2024</p>
+            <p>Graduate-level introduction to supervised and unsupervised learning algorithms.</p>
+          </div>
+          <div class="card card--compact">
+            <h3>CS 224N: Natural Language Processing</h3>
+            <p class="card__meta">Winter 2024</p>
+            <p>Deep learning approaches for NLP, including transformers, BERT, and GPT architectures.</p>
+          </div>
+          <div class="card card--compact">
+            <h3>CS 131: Computer Vision</h3>
+            <p class="card__meta">Fall 2022, Fall 2024</p>
+            <p>Foundations of visual recognition, from classical techniques to modern deep learning.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section__title">Contact</h2>
+        <div class="contact__grid">
+          <div class="contact__info">
+            <div class="contact__item">
+              <span class="contact__icon">&#9993;</span>
+              <span>jane.doe@example.edu</span>
+            </div>
+            <div class="contact__item">
+              <span class="contact__icon">&#9742;</span>
+              <span>+1 (555) 123-4567</span>
+            </div>
+            <div class="contact__item">
+              <span class="contact__icon">&#127968;</span>
+              <span>Gates Building, Room 242<br>University of Example<br>Example, CA 94305</span>
+            </div>
+          </div>
+          <form class="contact__form">
+            <div class="form__group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form__group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form__group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Dr. Jane Doe. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
