@@ -3,118 +3,73 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Academic Portfolio</title>
+  <title>Dang Nha Nguyen — Academic Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
   <header class="header">
     <nav class="nav">
-      <a href="#" class="nav__brand">Dr. Jane Doe</a>
+      <a href="#" class="nav__brand">Dang-Nha Nguyen</a>
       <button class="nav__toggle" aria-label="Toggle menu">
         <span></span>
         <span></span>
         <span></span>
       </button>
+      <button class="theme-toggle" aria-label="Toggle dark mode">
+        <svg class="theme-toggle__icon theme-toggle__icon--sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+        <svg class="theme-toggle__icon theme-toggle__icon--moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
       <ul class="nav__links">
         <li><a href="#about">About</a></li>
-        <li><a href="#research">Research</a></li>
+        <li><a href="#experience">Experience</a></li>
         <li><a href="#publications">Publications</a></li>
         <li><a href="#teaching">Teaching</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <!-- <li><a href="#contact">Contact</a></li> -->
       </ul>
     </nav>
   </header>
 
   <main>
-    <!-- <section class="hero">
-      <div class="container">
-        <h1>Dang-Nha Nguyen</h1>
-        <p class="hero__subtitle">Associate Professor of Computer Science, University of Example</p>
-        <p class="hero__interests">Machine Learning &bull; Natural Language Processing &bull; Computer Vision</p>
-        <div class="hero__social">
-          <a href="https://linkedin.com" target="_blank" rel="noopener" class="hero__social-link" aria-label="LinkedIn">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-            <span>LinkedIn</span>
-          </a>
-          <a href="https://github.com" target="_blank" rel="noopener" class="hero__social-link" aria-label="GitHub">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-            <span>GitHub</span>
-          </a>
-        </div>
-      </div>
-    </section> -->
-
     <section id="about" class="section">
       <div class="container">
-        <h2 class="section__title">About</h2>
-        <div class="about__grid">
-          <div class="about__image">
-            <img src="statics/avt.jpg" alt="Portrait of Dr. Jane Doe" class="about__photo">
+        <div class="about__card">
+          <div class="about__profile">
+            <div class="about__image">
+              <img src="statics/avt.jpg" alt="Portrait of Dang Nha Nguyen" class="about__photo">
+            </div>
+            <h2 class="about__name">Dang Nha Nguyen</h2>
+            <div class="about__social">
+              <a href="statics/DangNhaNguyen_resume.pdf" class="about__social-link about__social-link--cv" target="_blank" rel="noopener" aria-label="CV" title="CV">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+              </a>
+              <a href="https://scholar.google.com/citations?user=f7u1FeUAAAAJ&hl=en" class="about__social-link" target="_blank" rel="noopener" aria-label="Google Scholar" title="Google Scholar">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>
+              </a>
+              <a href="https://www.linkedin.com/in/dangnha/" class="about__social-link" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </a>
+              <a href="https://github.com/dangnha" class="about__social-link" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              </a>
+            </div>
           </div>
           <div class="about__text">
             <p>
-              I am an Associate Professor in the Department of Computer Science at University of Example.
-              My research lies at the intersection of machine learning and natural language processing, with
-              a particular focus on developing interpretable models for complex reasoning tasks.
+              Hi! I'm Dang Nha Nguyen, a Computer Science graduate from Vietnam-Korea University of 
+              Information and Communication Technology <a href="https://vku.udn.vn/" target="_blank">(VKU)</a>, Vietnam.
             </p>
             <p>
-              Prior to joining University of Example, I completed my Ph.D. at Stanford University (2016)
-              and was a postdoctoral researcher at MIT CSAIL. My work has been recognized with
-              an NSF CAREER Award, a Google Faculty Research Award, and best paper awards at NeurIPS and ACL.
+              My research interests focus on robotics, embodied AI, and multimodal learning. I am particularly interested 
+              in building intelligent robotic systems that can perceive, reason, and interact with complex real-world environments 
+              through vision-language-action models and representation learning.
             </p>
-            <div class="about__links">
-              <a href="statics/DangNhaNguyen_resume.pdf" class="btn btn--primary" target="_blank" rel="noopener">Download CV</a>
-              <a href="https://scholar.google.com/citations?user=f7u1FeUAAAAJ&hl=en" class="btn btn--outline" target="_blank" rel="noopener">Google Scholar</a>
-              <a href="https://www.linkedin.com/in/dangnha/" class="btn btn--outline" target="_blank" rel="noopener">LinkedIn</a>
-              <a href="https://github.com/dangnha" class="btn btn--outline" target="_blank" rel="noopener">GitHub</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="research" class="section section--alt">
-      <div class="container">
-        <h2 class="section__title">Research</h2>
-        <div class="research__grid">
-          <div class="card">
-            <h3>Interpretable Machine Learning</h3>
             <p>
-              Developing methods to explain and interpret black-box models, with applications in
-              healthcare and legal decision-making systems.
+              Currently serving as a Teaching Assistant at AI Vietnam under the supervision of <a href="https://dblp.org/pid/142/0382.html" target="_blank">Dr. Quang Vinh Dinh</a>. My research at AI Vietnam on time-series augmentation for long-term forecasting was accepted at the AAAI 2025 Workshop on AI for Time Series (AI4TS), in collaboration with <a href="https://scholar.google.com/citations?user=NuFoYjkAAAAJ&hl=en" target="_blank">Khoa Tho Anh Nguyen</a>.
+              Prior work includes metaheuristic optimization under the supervision of <a href="https://scholar.google.co.th/citations?user=DLLxPLgAAAAJ&hl=en" target="_blank">Prof. Sunarin Chanta</a> and <a href="https://scholar.google.com/citations?user=hKGZToAAAAAJ&hl=en" target="_blank">Prof. Ornurai Sangsawang</a> at KMUTNB, Thailand, published in the Journal of Industrial and Engineering Management (JIEM, Q2). I also served as a research assistant with Dr. Nguyen Trinh Trung Duong on a drug repurposing project using graph neural networks and knowledge graphs.
             </p>
-            <ul class="card__tags">
-              <li>LIME</li>
-              <li>SHAP</li>
-              <li>Model Distillation</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>Large Language Models</h3>
-            <p>
-              Investigating the reasoning capabilities and limitations of LLMs, including
-              chain-of-thought prompting and multi-step problem solving.
-            </p>
-            <ul class="card__tags">
-              <li>GPT</li>
-              <li>Reasoning</li>
-              <li>Prompt Engineering</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>Computer Vision</h3>
-            <p>
-              Advancing visual understanding through self-supervised learning and
-              multimodal representations for image-text tasks.
-            </p>
-            <ul class="card__tags">
-              <li>Vision Transformers</li>
-              <li>CLIP</li>
-              <li>Contrastive Learning</li>
-            </ul>
           </div>
         </div>
       </div>
@@ -126,78 +81,295 @@
         <div class="pubs__list">
           <div class="pub">
             <h3 class="pub__title">
-              Interpretable Neural Networks via Concept Activation Vectors
+              IMA: An Imputation-based Mixup Augmentation Using SSL for Time Series Data
             </h3>
-            <p class="pub__authors">Doe, J., Smith, A., &amp; Johnson, R.</p>
-            <p class="pub__venue">NeurIPS, 2023 &mdash; <span class="pub__award">Best Paper Award</span></p>
+            <p class="pub__authors">Nha Dang Nguyen, Dang Hai Nguyen, &amp; Khoa Tho Anh Nguyen.</p>
+            <p class="pub__venue">AAAI 2025 Workshop on AI for Time Series (AI4TS) &mdash; <span class="pub__award">Accepted</span></p>
+            <p class="pub__abstract">Proposes IMA, a novel data augmentation method for long-term time series forecasting that combines imputation-based mixup with self-supervised learning to generate diverse and realistic synthetic training samples.</p>
             <div class="pub__links">
               <a href="#" class="pub__link">Paper</a>
-              <a href="#" class="pub__link">Code</a>
-              <a href="#" class="pub__link">Slides</a>
             </div>
           </div>
           <div class="pub">
             <h3 class="pub__title">
-              Chain-of-Thought Reasoning in Multimodal Language Models
+              Metaheuristics for Multi-Objective Hub Location Problem
             </h3>
-            <p class="pub__authors">Doe, J., &amp; Chen, L.</p>
-            <p class="pub__venue">ICLR, 2022</p>
+            <p class="pub__authors">Nam Pham Van, Nha Nguyen Dang, Ornurai Sangsawang, &amp; Sunarin Chanta.</p>
+            <p class="pub__venue">Journal of Industrial Engineering and Management &mdash; <span class="pub__award">Accepted</span></p>
+            <p class="pub__abstract">Introduces a novel Tabu Search metaheuristic approach for solving multi-objective hub location problems, addressing congestion management and transit point service optimization in hub-and-spoke networks.</p>
             <div class="pub__links">
               <a href="#" class="pub__link">Paper</a>
-              <a href="#" class="pub__link">Code</a>
-            </div>
-          </div>
-          <div class="pub">
-            <h3 class="pub__title">
-              Self-Supervised Learning for Robust Visual Representations
-            </h3>
-            <p class="pub__authors">Doe, J., Kumar, P., &amp; Zhang, Y.</p>
-            <p class="pub__venue">CVPR, 2021</p>
-            <div class="pub__links">
-              <a href="#" class="pub__link">Paper</a>
-              <a href="#" class="pub__link">Code</a>
-              <a href="#" class="pub__link">Poster</a>
-            </div>
-          </div>
-          <div class="pub">
-            <h3 class="pub__title">
-              Towards Faithful Explanations for Deep Neural Networks
-            </h3>
-            <p class="pub__authors">Doe, J.</p>
-            <p class="pub__venue">ACL, 2020 &mdash; <span class="pub__award">Best Paper Award</span></p>
-            <div class="pub__links">
-              <a href="#" class="pub__link">Paper</a>
-              <a href="#" class="pub__link">Code</a>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <section id="experience" class="section">
+      <div class="container">
+        <h2 class="section__title">Experience</h2>
+        <div class="timeline">
 
-    <section id="teaching" class="section section--alt">
+          <div class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div class="timeline__card timeline__card--right">
+              <div class="timeline__header">
+                <span class="timeline__date">Jun 2024 &mdash; Present</span>
+                <h3 class="timeline__role">Teaching Assistant</h3>
+                <p class="timeline__org"><a href="https://aivietnam.edu.vn/" target="_blank">AI Vietnam</a> &middot; Remote</p>
+              </div>
+              <ul class="timeline__list">
+                <li>Supervised by <a href="https://dblp.org/pid/142/0382.html" target="_blank">Dr. Quang Vinh Dinh</a></li>
+                <li>Teaching Assistant for AIO2024 &amp; AIO2025 courses: lesson design, documentation, code implementation, slides, and presentations</li>
+                <li>Team leader of Computer Vision research group (8 members), established Dec 2024</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div class="timeline__card timeline__card--left">
+              <div class="timeline__header">
+                <span class="timeline__date">Oct 2024 &mdash; Dec 2024</span>
+                <h3 class="timeline__role">Research Assistant</h3>
+                <p class="timeline__org">Dept. of Drug Design and Pharmacology, University of Copenhagen &middot; Remote</p>
+              </div>
+              <ul class="timeline__list">
+                <li>Collaborated with <a href="https://scholar.google.com/citations?user=47PZn3AAAAAJ&hl=en" target="_blank">Dr. Nguyen Trinh Trung Duong</a></li>
+                <li><strong>Drug Repurposing via GNNs</strong> — integrated knowledge graphs and deep learning to identify alternative therapeutic uses for existing drugs</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div class="timeline__card timeline__card--right">
+              <div class="timeline__header">
+                <span class="timeline__date">Jul 2024 &mdash; Aug 2024</span>
+                <h3 class="timeline__role">International Research Internship</h3>
+                <p class="timeline__org">KMUTNB &middot; Bangkok, Thailand</p>
+              </div>
+              <ul class="timeline__list">
+                <li>Supervised by <a href="https://scholar.google.co.th/citations?user=DLLxPLgAAAAJ&hl=en" target="_blank">Prof. Sunarin Chanta</a> and <a href="https://scholar.google.com/citations?user=hKGZToAAAAAJ&hl=en" target="_blank">Prof. Ornurai Sangsawang</a></li>
+                <li>Analyzed optimal urban rail travel patterns for congestion reduction, using case studies from the French railway system</li>
+                <li>Proposed a novel Tabu Search algorithm for multi-objective optimization problems</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div class="timeline__card timeline__card--left">
+              <div class="timeline__header">
+                <span class="timeline__date">Jun 2023 &mdash; Aug 2023</span>
+                <h3 class="timeline__role">Research Internship</h3>
+                <p class="timeline__org">Danang International Institute of Technology (DNIIT) &middot; On-site</p>
+              </div>
+              <ul class="timeline__list">
+                <li><strong>DoNaAI Project</strong> — AI system for waste classification</li>
+                <li>Conducted literature review and studied existing algorithms for image-based waste recognition</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+
+        <section id="teaching" class="section section--alt">
       <div class="container">
         <h2 class="section__title">Teaching</h2>
         <div class="teaching__grid">
-          <div class="card card--compact">
-            <h3>CS 229: Machine Learning</h3>
-            <p class="card__meta">Fall 2023, Spring 2024</p>
-            <p>Graduate-level introduction to supervised and unsupervised learning algorithms.</p>
-          </div>
-          <div class="card card--compact">
-            <h3>CS 224N: Natural Language Processing</h3>
-            <p class="card__meta">Winter 2024</p>
-            <p>Deep learning approaches for NLP, including transformers, BERT, and GPT architectures.</p>
-          </div>
-          <div class="card card--compact">
-            <h3>CS 131: Computer Vision</h3>
-            <p class="card__meta">Fall 2022, Fall 2024</p>
-            <p>Foundations of visual recognition, from classical techniques to modern deep learning.</p>
-          </div>
+            <div class="teaching__card">
+              <a href="statics/pdf/CLIP for Image Classification_V3.pdf" target="_blank" class="teaching__card-thumb">
+                <img src="statics/pdf/thumbs/CLIP_for_Image_Classification_V3.png" alt="CLIP for Image Classification preview" loading="lazy">
+                <span class="teaching__card-overlay">Open PDF</span>
+              </a>
+              <div class="teaching__card-body">
+                <h3 class="teaching__card-title">CLIP for Image Classification</h3>
+                <p class="teaching__card-desc">Contrastive Language-Image Pretraining applied to image classification via vision-language alignment.</p>
+              </div>
+            </div>
+            <div class="teaching__card">
+              <a href="statics/pdf/CLIP for Video Classification_V2.pdf" target="_blank" class="teaching__card-thumb">
+                <img src="statics/pdf/thumbs/CLIP_for_Video_Classification_V2.png" alt="CLIP for Video Classification preview" loading="lazy">
+                <span class="teaching__card-overlay">Open PDF</span>
+              </a>
+              <div class="teaching__card-body">
+                <h3 class="teaching__card-title">CLIP for Video Classification</h3>
+                <p class="teaching__card-desc">Extending CLIP to video classification through temporal modeling and frame-level feature aggregation.</p>
+              </div>
+            </div>
+            <div class="teaching__card">
+              <a href="statics/pdf/[Slide] - Image_Localization_v2.pdf" target="_blank" class="teaching__card-thumb">
+                <img src="statics/pdf/thumbs/Slide_-_Image_Localization_v2.png" alt="Image Localization preview" loading="lazy">
+                <span class="teaching__card-overlay">Open PDF</span>
+              </a>
+              <div class="teaching__card-body">
+                <h3 class="teaching__card-title">Image Localization</h3>
+                <p class="teaching__card-desc">Object localization techniques covering bounding box regression and region proposal methods.</p>
+              </div>
+            </div>
+            <div class="teaching__card">
+              <a href="statics/pdf/[Slide_v3]-YOLO-V1.pdf" target="_blank" class="teaching__card-thumb">
+                <img src="statics/pdf/thumbs/Slide_v3_-YOLO-V1.png" alt="YOLOv1 Object Detection preview" loading="lazy">
+                <span class="teaching__card-overlay">Open PDF</span>
+              </a>
+              <div class="teaching__card-body">
+                <h3 class="teaching__card-title">YOLOv1 Object Detection</h3>
+                <p class="teaching__card-desc">YOLOv1 architecture for unified real-time detection with grid-based bounding box prediction.</p>
+              </div>
+            </div>
+            <div class="teaching__card">
+              <a href="statics/pdf/[Slide_v2] - GNN Exercise.pdf" target="_blank" class="teaching__card-thumb">
+                <img src="statics/pdf/thumbs/Slide_v2_-_GNN_Exercise.png" alt="Graph Neural Networks preview" loading="lazy">
+                <span class="teaching__card-overlay">Open PDF</span>
+              </a>
+              <div class="teaching__card-body">
+                <h3 class="teaching__card-title">Graph Neural Networks</h3>
+                <p class="teaching__card-desc">Hands-on exercises covering message passing, node embeddings, and graph classification with GNNs.</p>
+              </div>
+            </div>
+            <div class="teaching__card">
+              <a href="statics/pdf/[Slide] - Advanced-CNN_V3.pdf" target="_blank" class="teaching__card-thumb">
+                <img src="statics/pdf/thumbs/Slide_-_Advanced-CNN_V3.png" alt="Advanced CNN preview" loading="lazy">
+                <span class="teaching__card-overlay">Open PDF</span>
+              </a>
+              <div class="teaching__card-body">
+                <h3 class="teaching__card-title">Advanced CNN</h3>
+                <p class="teaching__card-desc">Advanced CNN architectures including residual connections and modern convolutional designs.</p>
+              </div>
+            </div>
+            <div class="teaching__card teaching__card--hidden">
+              <a href="statics/pdf/[Slide] - Introduction to CNN_V1.pdf" target="_blank" class="teaching__card-thumb">
+                <img src="statics/pdf/thumbs/Slide_-_Introduction_to_CNN_V1.png" alt="Introduction to CNN preview" loading="lazy">
+                <span class="teaching__card-overlay">Open PDF</span>
+              </a>
+              <div class="teaching__card-body">
+                <h3 class="teaching__card-title">Introduction to CNN</h3>
+                <p class="teaching__card-desc">Foundations of Convolutional Neural Networks: convolution, pooling, and basic architectures.</p>
+              </div>
+            </div>
+            <div class="teaching__card teaching__card--hidden">
+              <a href="statics/pdf/[Slide]-Softmax-Regression_V1.pdf" target="_blank" class="teaching__card-thumb">
+                <img src="statics/pdf/thumbs/Slide_-Softmax-Regression_V1.png" alt="Softmax Regression preview" loading="lazy">
+                <span class="teaching__card-overlay">Open PDF</span>
+              </a>
+              <div class="teaching__card-body">
+                <h3 class="teaching__card-title">Softmax Regression</h3>
+                <p class="teaching__card-desc">Softmax regression fundamentals for multi-class classification with probabilistic interpretation.</p>
+              </div>
+            </div>
+            <div class="teaching__card teaching__card--hidden">
+              <a href="statics/pdf/[Slidev3] - Face-Recognition.pdf" target="_blank" class="teaching__card-thumb">
+                <img src="statics/pdf/thumbs/Slidev3_-_Face-Recognition.png" alt="Face Recognition preview" loading="lazy">
+                <span class="teaching__card-overlay">Open PDF</span>
+              </a>
+              <div class="teaching__card-body">
+                <h3 class="teaching__card-title">Face Recognition</h3>
+                <p class="teaching__card-desc">Face recognition systems using Siamese networks, triplet loss, and one-shot learning.</p>
+              </div>
+            </div>
+            <div class="teaching__card teaching__card--hidden">
+              <a href="statics/pdf/Data_Version_Control_V3.pdf" target="_blank" class="teaching__card-thumb">
+                <img src="statics/pdf/thumbs/Data_Version_Control_V3.png" alt="Data Version Control preview" loading="lazy">
+                <span class="teaching__card-overlay">Open PDF</span>
+              </a>
+              <div class="teaching__card-body">
+                <h3 class="teaching__card-title">Data Version Control</h3>
+                <p class="teaching__card-desc">Managing ML experiments and datasets with DVC for reproducible machine learning pipelines.</p>
+              </div>
+            </div>
+            <div class="teaching__card teaching__card--hidden">
+              <a href="statics/pdf/ETL-Pipeline_V3.pdf" target="_blank" class="teaching__card-thumb">
+                <img src="statics/pdf/thumbs/ETL-Pipeline_V3.png" alt="ETL Pipeline preview" loading="lazy">
+                <span class="teaching__card-overlay">Open PDF</span>
+              </a>
+              <div class="teaching__card-body">
+                <h3 class="teaching__card-title">ETL Pipeline</h3>
+                <p class="teaching__card-desc">Building robust ETL pipelines for data preprocessing and feature engineering in production.</p>
+              </div>
+            </div>
+            <div class="teaching__card teaching__card--hidden">
+              <a href="statics/pdf/FastAPI_deployment_V2.pdf" target="_blank" class="teaching__card-thumb">
+                <img src="statics/pdf/thumbs/FastAPI_deployment_V2.png" alt="FastAPI Deployment preview" loading="lazy">
+                <span class="teaching__card-overlay">Open PDF</span>
+              </a>
+              <div class="teaching__card-body">
+                <h3 class="teaching__card-title">FastAPI Deployment</h3>
+                <p class="teaching__card-desc">Deploying ML models as REST APIs with FastAPI from serialization to serving.</p>
+              </div>
+            </div>
+            <div class="teaching__card teaching__card--hidden">
+              <a href="statics/pdf/Proecjt_Vector_database.pdf" target="_blank" class="teaching__card-thumb">
+                <img src="statics/pdf/thumbs/Proecjt_Vector_database.png" alt="Vector Database preview" loading="lazy">
+                <span class="teaching__card-overlay">Open PDF</span>
+              </a>
+              <div class="teaching__card-body">
+                <h3 class="teaching__card-title">Vector Database</h3>
+                <p class="teaching__card-desc">Vector databases for similarity search and embedding storage in modern ML applications.</p>
+              </div>
+            </div>
+            <div class="teaching__card teaching__card--hidden">
+              <a href="statics/pdf/[Slide_V2] - Exercise_Reinforcement_Learning.pdf" target="_blank" class="teaching__card-thumb">
+                <img src="statics/pdf/thumbs/Slide_V2_-_Exercise_Reinforcement_Learning.png" alt="Reinforcement Learning preview" loading="lazy">
+                <span class="teaching__card-overlay">Open PDF</span>
+              </a>
+              <div class="teaching__card-body">
+                <h3 class="teaching__card-title">Reinforcement Learning</h3>
+                <p class="teaching__card-desc">Reinforcement learning exercises covering Q-learning, policy gradients, and MDPs.</p>
+              </div>
+            </div>
+            <div class="teaching__card teaching__card--hidden">
+              <a href="statics/pdf/[Slide_v1] - Recommendation System.pdf" target="_blank" class="teaching__card-thumb">
+                <img src="statics/pdf/thumbs/Slide_v1_-_Recommendation_System.png" alt="Recommendation System preview" loading="lazy">
+                <span class="teaching__card-overlay">Open PDF</span>
+              </a>
+              <div class="teaching__card-body">
+                <h3 class="teaching__card-title">Recommendation System</h3>
+                <p class="teaching__card-desc">Recommendation systems using collaborative filtering, matrix factorization, and content-based methods.</p>
+              </div>
+            </div>
+            <div class="teaching__card teaching__card--hidden">
+              <a href="statics/pdf/[Slide_v2] - AWS Networking & Delivery.pdf" target="_blank" class="teaching__card-thumb">
+                <img src="statics/pdf/thumbs/Slide_v2_-_AWS_Networking_&_Delivery.png" alt="AWS Networking & Delivery preview" loading="lazy">
+                <span class="teaching__card-overlay">Open PDF</span>
+              </a>
+              <div class="teaching__card-body">
+                <h3 class="teaching__card-title">AWS Networking & Delivery</h3>
+                <p class="teaching__card-desc">AWS networking fundamentals: VPC, CloudFront CDN, and content delivery architectures.</p>
+              </div>
+            </div>
+            <div class="teaching__card teaching__card--hidden">
+              <a href="statics/pdf/[Slide_v2] - AWS Pricing & Billing.pdf" target="_blank" class="teaching__card-thumb">
+                <img src="statics/pdf/thumbs/Slide_v2_-_AWS_Pricing_&_Billing.png" alt="AWS Pricing & Billing preview" loading="lazy">
+                <span class="teaching__card-overlay">Open PDF</span>
+              </a>
+              <div class="teaching__card-body">
+                <h3 class="teaching__card-title">AWS Pricing & Billing</h3>
+                <p class="teaching__card-desc">AWS pricing models and billing management for cloud cost optimization.</p>
+              </div>
+            </div>
+            <div class="teaching__card teaching__card--hidden">
+              <a href="statics/pdf/[Slide_v2]-Introduction-to-NER.pdf" target="_blank" class="teaching__card-thumb">
+                <img src="statics/pdf/thumbs/Slide_v2_-Introduction-to-NER.png" alt="Introduction to NER preview" loading="lazy">
+                <span class="teaching__card-overlay">Open PDF</span>
+              </a>
+              <div class="teaching__card-body">
+                <h3 class="teaching__card-title">Introduction to NER</h3>
+                <p class="teaching__card-desc">Named Entity Recognition with sequence labeling, CRFs, and transformer-based approaches.</p>
+              </div>
+            </div>
+        </div>
+        <div class="teaching__more">
+          <button class="btn btn--outline teaching__toggle" onclick="toggleTeaching()">View All 18 Lessons</button>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="section">
+    <!-- <section id="contact" class="section">
       <div class="container">
         <h2 class="section__title">Contact</h2>
         <div class="contact__grid">
@@ -232,12 +404,20 @@
           </form>
         </div>
       </div>
-    </section>
+    </section> -->
   </main>
 
   <footer class="footer">
     <div class="container">
-      <p>&copy; 2026 Dr. Jane Doe. All rights reserved.</p>
+      <div class="footer__inner">
+        <p class="footer__copy">&copy; 2026 Dang Nha Nguyen</p>
+        <div class="footer__links">
+          <a href="mailto:ndnha160603@gmail.com" class="footer__link">ndnha160603@gmail.com</a>
+          <a href="https://github.com/dangnha" class="footer__link" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/dangnha/" class="footer__link" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://scholar.google.com/citations?user=f7u1FeUAAAAJ&hl=en" class="footer__link" target="_blank" rel="noopener">Google Scholar</a>
+        </div>
+      </div>
     </div>
   </footer>
 

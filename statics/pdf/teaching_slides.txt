@@ -1,0 +1,18 @@
+CLIP for Image Classification, statics/pdf/CLIP for Image Classification_V3.pdf, Contrastive Language-Image Pretraining applied to image classification via vision-language alignment.
+CLIP for Video Classification, statics/pdf/CLIP for Video Classification_V2.pdf, Extending CLIP to video classification through temporal modeling and frame-level feature aggregation.
+Image Localization, statics/pdf/[Slide] - Image_Localization_v2.pdf, Object localization techniques covering bounding box regression and region proposal methods.
+YOLOv1 Object Detection, statics/pdf/[Slide_v3]-YOLO-V1.pdf, YOLOv1 architecture for unified real-time detection with grid-based bounding box prediction.
+Graph Neural Networks, statics/pdf/[Slide_v2] - GNN Exercise.pdf, Hands-on exercises covering message passing, node embeddings, and graph classification with GNNs.
+Advanced CNN, statics/pdf/[Slide] - Advanced-CNN_V3.pdf, Advanced CNN architectures including residual connections and modern convolutional designs.
+Introduction to CNN, statics/pdf/[Slide] - Introduction to CNN_V1.pdf, Foundations of Convolutional Neural Networks: convolution, pooling, and basic architectures.
+Softmax Regression, statics/pdf/[Slide]-Softmax-Regression_V1.pdf, Softmax regression fundamentals for multi-class classification with probabilistic interpretation.
+Face Recognition, statics/pdf/[Slidev3] - Face-Recognition.pdf, Face recognition systems using Siamese networks, triplet loss, and one-shot learning.
+Data Version Control, statics/pdf/Data_Version_Control_V3.pdf, Managing ML experiments and datasets with DVC for reproducible machine learning pipelines.
+ETL Pipeline, statics/pdf/ETL-Pipeline_V3.pdf, Building robust ETL pipelines for data preprocessing and feature engineering in production.
+FastAPI Deployment, statics/pdf/FastAPI_deployment_V2.pdf, Deploying ML models as REST APIs with FastAPI from serialization to serving.
+Vector Database, statics/pdf/Proecjt_Vector_database.pdf, Vector databases for similarity search and embedding storage in modern ML applications.
+Reinforcement Learning, statics/pdf/[Slide_V2] - Exercise_Reinforcement_Learning.pdf, Reinforcement learning exercises covering Q-learning, policy gradients, and MDPs.
+Recommendation System, statics/pdf/[Slide_v1] - Recommendation System.pdf, Recommendation systems using collaborative filtering, matrix factorization, and content-based methods.
+AWS Networking & Delivery, statics/pdf/[Slide_v2] - AWS Networking & Delivery.pdf, AWS networking fundamentals: VPC, CloudFront CDN, and content delivery architectures.
+AWS Pricing & Billing, statics/pdf/[Slide_v2] - AWS Pricing & Billing.pdf, AWS pricing models and billing management for cloud cost optimization.
+Introduction to NER, statics/pdf/[Slide_v2]-Introduction-to-NER.pdf, Named Entity Recognition with sequence labeling, CRFs, and transformer-based approaches.
